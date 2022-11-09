@@ -56,8 +56,8 @@ export default function Spotlight() {
     };
     return (
         <div className="spotlight">
-            <div className="wrapper-left grid pb-24">
-                <div className="grid py-28">
+            <div className="grid items-center pb-24 wrapper-left lg:grid-cols-2 sm:pt-44 lg:py-56 py-28 ">
+                <div className="grid">
                     <div className="flex text-3xl font-geomanistLight">
                         <span>🌴</span>
                         <span>🐯</span>
@@ -66,8 +66,9 @@ export default function Spotlight() {
                     <h1 className="text-[70px] pt-14 font-bold text-dark capitalize">
                         get cozy
                     </h1>
-                    <label className="text-tertiary text-4xl leading-snug">
-                        Design & digital marketing in San Diego, California
+                    <label className="text-4xl leading-snug sm:w-11/12 text-tertiary">
+                        Design & digital marketing <br className="sm:hidden lg:block" />{" "}
+                        in San Diego, California
                     </label>
                     <p className="text-dark text-[22px] pt-10 pb-6 tracking-wider leading-relaxed">
                         We’re an award-winning design shop based in South Park,
@@ -83,8 +84,8 @@ export default function Spotlight() {
                     </p>
                     <Button text="why we do what we do" />
                 </div>
-                <div className="grid gap-10 lg:grid-cols-2">
-                    <div className="grid gap-10 justify-items-center content-center">
+                <div className="grid items-center gap-10 lg:gap-0 sm:grid-cols-2">
+                    <div className="grid content-center gap-10 justify-items-center">
                         {Object.keys(data.part1).map((index, key) => {
                             return (
                                 <Image
@@ -96,21 +97,21 @@ export default function Spotlight() {
                                     className={`${
                                         key ==
                                             Object.keys(data.part1).length -
-                                                1 && "-mt-10"
+                                                1 && "-mt-10 sm:mt-0"
                                     }`}
                                 />
                             );
                         })}
                     </div>
-                    <div className="grid gap-10 justify-items-center content-center">
-                        <div className="grid gap-5 justify-items-center content-center">
+                    <div className="grid content-center gap-10 justify-items-center">
+                        <div className="grid content-center gap-5 justify-items-center">
                             <Image
                                 alt="acrredition"
                                 width={data.image5.width}
                                 height={data.image5.height}
                                 src={"/logos" + data.image5.path}
                             />
-                            <p className="text-sm font-geomanist font-semibold">
+                            <p className="text-sm font-semibold font-geomanist">
                                 BBB rating: A+
                             </p>
                         </div>

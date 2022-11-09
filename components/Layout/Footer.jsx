@@ -12,17 +12,17 @@ export default function Footer() {
         "email.svg",
     ];
     return (
-        <div className="bg-light py-12">
-            <div className="wrapper grid gap-4">
-                <div className="flex justify-between flex-col lg:flex-row gap-8">
-                    <div className="flex flex-col justify-center items-center lg:flex-row gap-6">
+        <div className="py-16 bg-light">
+            <div className="grid gap-6 px-10 sm:gap-8 wrapper">
+                <div className="flex flex-col justify-between gap-8 sm:flex-row">
+                    <div className="flex flex-col items-center justify-center gap-6 sm:flex-row lg:gap-16">
                         <Image
                             src="/logo-success.svg"
                             width={72.48}
                             height={50}
                             alt="logo green"
                         />
-                        <div className="flex flex-col text-center gap-3 text-secondary text-xs">
+                        <div className="flex flex-col gap-3 text-xs text-center text-secondary sm:flex-row lg:gap-5">
                             <Link href="/about">About</Link>
                             <Link href="/about">Services</Link>
                             <Link href="/about">Work</Link>
@@ -30,7 +30,7 @@ export default function Footer() {
                             <Link href="/about">Contact</Link>
                         </div>
                     </div>
-                    <div className="grid justify-items-center gap-4">
+                    <div className="grid gap-4 justify-items-center">
                         <div className="flex items-center gap-2 text-xs text-danger">
                             <Image height={24} width={24} src="/sdd.webp" />
                             San diego digital designers
@@ -55,8 +55,8 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="bg-primary h-0.5 w-full"></div>
-                <div className="flex flex-col lg:flex-row justify-between gap-16">
-                    <div className="flex flex-wrap gap-6">
+                <div className="flex flex-col justify-between gap-16 sm:flex-row">
+                    <div className="flex flex-wrap items-center mt-4 gap-7">
                         <div className="grid gap-5">
                             <Image
                                 alt="acrredition"
@@ -64,7 +64,7 @@ export default function Footer() {
                                 height={52.24}
                                 src="/logos/logo5.webp"
                             />
-                            <p className="text-sm font-geomanist font-semibold">
+                            <p className="text-sm font-semibold font-geomanist">
                                 BBB rating: A+
                             </p>
                         </div>
@@ -74,11 +74,11 @@ export default function Footer() {
                             width={140}
                             alt="Bureau of accredators"
                         />
-                        <div className="flex gap-4 rounded-bl-3xl rounded-tr-3xl bg-white pr-5 max-w-max ">
-                            <div className="bg-dark p-4 flex justify-center items-center rounded-bl-3xl rounded-tr-3xl">
+                        <div className="flex h-12 gap-4 pr-5 bg-white rounded-bl-3xl rounded-tr-3xl max-w-max lg:hidden">
+                            <div className="flex items-center justify-center p-4 bg-dark rounded-bl-3xl rounded-tr-3xl">
                                 <Image src="/clog.svg" width={24} height={24} />
                             </div>
-                            <div className="font-geomanist grid rounded-br-3xl ">
+                            <div className="grid font-geomanist rounded-br-3xl ">
                                 <div className="flex items-center gap-2 ">
                                     <p className="text-xl ">5.0</p>
                                     <div className="flex gap-1 ">
@@ -108,11 +108,11 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid justify-items-center lg:justify-items-end gap-12">
+                    <div className="grid gap-12 lg:flex justify-items-center sm:justify-items-end lg:items-center">
                         <span className="text-xs text-dark">
                             Made with ❤ in beautiful, sunny San Diego. ©2021
                         </span>
-                        <div className="flex gap-4 text-secondary text-xs">
+                        <div className="flex gap-4 text-xs text-secondary">
                             <Link href="/privacy">Privacy</Link>
                             <Link href="/privacy">Photo edit</Link>
                         </div>

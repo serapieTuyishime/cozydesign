@@ -368,21 +368,22 @@
         @apply font-fraunces;
     }
     .wrapper {
-        @apply max-w-custom container mx-auto px-10;
-        /* @apply max-w-custom container mx-auto px-10; */
+        @apply container px-10 mx-auto max-w-custom sm:px-24 lg:px-6;
+        /* @apply container px-10 mx-auto max-w-custom; */
     }
     .wrapper-left {
-        @apply max-w-custom container mx-auto pr-10 pl-14;
+        @apply container pr-10 mx-auto max-w-custom pl-14 sm:pl-40 sm:pr-28 lg:pl-32 lg:pr-12
     }
     .wrapper-right{
-        @apply max-w-custom container mx-auto pl-10 pr-14 
+        @apply max-w-4xl container mx-auto px-10 lg:px-14
     }
     .noise {
         @apply bg-secondary;
         background-image: url(../public/Images/noise.webp);
+        background-size: 50px;
     }
     .spotlight {
-        @apply noise bg-cover;
+        @apply bg-cover;
         background-image: url("../public/images/waves.svg");
     }
 }

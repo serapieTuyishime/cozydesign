@@ -37,7 +37,7 @@ module.exports = {
                 custom: "87.5rem",
             },
             lineHeight: {
-                hug: 1.11,
+                hug: 1.1,
             },
         },
     },

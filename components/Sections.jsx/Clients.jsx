@@ -40,13 +40,21 @@ export default function Clients() {
     };
     return (
         <div className="bg-dark ">
-            <div className="wrapper grid pb-4 pt-16">
-                <h1 className="text-primary text-center text-3xl italic">
+            <div className="grid pt-16 pb-4 wrapper">
+                <h1 className="text-3xl italic text-center text-primary">
                     More than 150 happy clients
                 </h1>
-                <div className="flex gap-10 flex-col sm:flex-row justify-center items-center py-12">
-                    {Object.keys(data).map((index, key)=>{
-                        return <Image key={key} width={data[index].width} height={data[index].height} src={data[index].path} />
+                <div className="flex flex-col items-center justify-center gap-10 py-12 sm:flex-row sm:gap-0 lg:gap-10">
+                    {Object.keys(data).map((index, key) => {
+                        return (
+                            <Image
+                                key={key}
+                                width={data[index].width}
+                                height={data[index].height}
+                                src={data[index].path}
+                                className="sm:scale-50 lg:scale-75"
+                            />
+                        );
                     })}
                 </div>
             </div>
